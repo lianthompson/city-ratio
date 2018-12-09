@@ -6,8 +6,8 @@ mapboxgl.accessToken = "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2Mza
 
 
 
-var sgLatLng = [103.8198, 1.3521];
-var nycLatLng = [-74.006, 40.7128];
+var firstCityCoordinates = [103.8198, 1.3521];
+var secondCityCoordinates = [-74.006, 40.7128];
 var ZOOM_LEVEL = 11;
 
 
@@ -19,17 +19,19 @@ export class Map extends Component {
         this.map = new mapboxgl.Map({
             container: this.firstCity, // container id
             style: "mapbox://styles/mapbox/basic-v9", //stylesheet location
-            center: sgLatLng, // starting position [lng, lat]
+            center: firstCityCoordinates, // starting position [lng, lat]
             zoom: ZOOM_LEVEL, // starting zoom
-            interactive: false
+            interactive: true,
+            scrollZoom: true
         });
 
         this.mapTwo = new mapboxgl.Map({
             container: this.secondCity, // container id
             style: "mapbox://styles/mapbox/dark-v9", //stylesheet location
-            center: [-122.431297, 37.773972], // starting position [lng, lat]
+            center: secondCityCoordinates, // starting position [lng, lat]
             zoom: ZOOM_LEVEL, // starting zoom
-            interactive: false
+            interactive: true,
+            scrollZoom: true
         });
     }
 
@@ -40,6 +42,7 @@ export class Map extends Component {
             bottom: '0',
             width: '100%',
             opacity: '0.6',
+
           };
 
         const secondCity = {
