@@ -10,7 +10,9 @@ export class Search extends Component {
     }
 
     updateFirstCity(event) {
-        this.setState({firstCity: event.target.value});
+        this.setState({
+            firstCity: event.target.value
+        });
     }
 
     updateSecondCity(event) {

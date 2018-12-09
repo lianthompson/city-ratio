@@ -24,54 +24,9 @@
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
   
-  <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 1000px;
-        position: relative;
-      }
-      .map {
-        position: absolute;
-        top: 100px;
-        bottom: 0;
-        width: 100%;
-        opacity: 0.6;
-        z-index: -1;
-      }
-      .other {
-        z-index: 1;
-        opacity: 0.3;
-      }
-    </style>
 </head>
   <body>
       <div id="root"></div>
-      
-      <div class="map" id="point-of-reference"></div>
-      <div class="map other" id="other-place"></div>
-      <script>
-        var sgLatLng = [103.8198, 1.3521];
-        var nycLatLng = [-74.006, 40.7128];
-        var ZOOM_LEVEL = 11;
-        mapboxgl.accessToken =
-          "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg";
-        var map = new mapboxgl.Map({
-          container: "other-place", // container id
-          style: "mapbox://styles/mapbox/basic-v9", //stylesheet location
-          center: sgLatLng, // starting position [lng, lat]
-          zoom: ZOOM_LEVEL, // starting zoom
-          interactive: false
-        });
-  
-        var map = new mapboxgl.Map({
-          container: "point-of-reference", // container id
-          style: "mapbox://styles/mapbox/dark-v9", //stylesheet location
-          center: [-122.431297, 37.773972], // starting position [lng, lat]
-          zoom: ZOOM_LEVEL, // starting zoom
-          interactive: false
-        });
-      </script>
       <!-- <script src="src/index.js"></script> -->
     <!-- <noscript>
           You need to enable JavaScript to run this app.
