@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 
 export class Search extends Component {
-    // state = {
-    //     firstCity: "",
-    //     secondCity: "",
-    // };
+    constructor() {
+        super();
+        this.state = {
+            firstCity: '',
+            secondCity: ''
+        }
+    }
 
-    // handleSubmit = (e) => {
-    //     e.preventDefault();
+    updateFirstCity(event) {
+        this.setState({firstCity: event.target.value});
+    }
 
-    //     const cityOne = e.target.firstCity.value;
-    //     const cityTwo = e.target.secondCity.value;
-    // }
+    updateSecondCity(event) {
+        this.setState({secondCity: event.target.value});
+    }
+
     render() {
         return (
             <div>
                 {/* <h4>Enter the two cities you'd like to compare</h4> */}
-                <form>
-                    <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' />
-                    <input type='text' id="firstCity" name='secondCity' placeholder='Ex. Singapore' />
+                <form onSubmit={this.handleSubmit}>
+                    <input type='text' value={this.state.firstCity} onChange={this.updateFirstCity.bind(this)} id="firstCity" name='firstCity' placeholder='Ex. San Francisco' 
+                    />
+                    <input type='text' value={this.state.secondCity}onChange={this.updateSecondCity.bind(this)}id="secondCity" name='secondCity' placeholder='Ex. Singapore' />
                     <button type='submit'>Search</button>
                 </form>
             </div>
