@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-//import { Search } from './components/Search';
+// import { Search } from './components/Search';
 import mapboxgl from 'mapbox-gl';
 
 mapboxgl.accessToken = "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg";
@@ -25,14 +25,18 @@ export class Map extends Component {
             scrollZoom: true
         });
 
-        this.mapTwo = new mapboxgl.Map({
-            container: this.secondCity, // container id
-            style: "mapbox://styles/mapbox/dark-v9", //stylesheet location
-            center: secondCityCoordinates, // starting position [lng, lat]
-            zoom: ZOOM_LEVEL, // starting zoom
-            interactive: true,
-            scrollZoom: true
-        });
+        this.map.on('load', () => {
+            this.mapTwo = new mapboxgl.Map({
+                container: this.secondCity, // container id
+                style: "mapbox://styles/mapbox/dark-v9", //stylesheet location
+                center: secondCityCoordinates, // starting position [lng, lat]
+                zoom: ZOOM_LEVEL, // starting zoom
+                // interactive: true,
+                // scrollZoom: true
+            });
+        })
+        console.log(firstCityCoordinates)
+        console.log(secondCityCoordinates)
     }
 
     render() {
