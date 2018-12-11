@@ -12,7 +12,7 @@ export class Search extends Component {
             let firstCity = e.target.firstCity.value;
             let secondCity = e.target.secondCity.value;
             console.log(firstCity, secondCity)
-        }
+    }
 
     render() {
         return (
