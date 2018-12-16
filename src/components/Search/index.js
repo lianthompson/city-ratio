@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import { Map } from '../Map';
+import { ActiveMap } from '../ActiveMap';
 
 export class Search extends Component {
+
+    // default state
     state = {
-            firstCity: '',
-            secondCity: ''
+        firstCity: 'Jamaica',
+        secondCity: 'San Francisco'
     };
 
     onTextChange = (e) => {
         e.preventDefault();
-            let firstCity = e.target.firstCity.value;
-            let secondCity = e.target.secondCity.value;
-            console.log(firstCity, secondCity)
+
+        this.setState({
+            firstCity: e.target.firstCity.value,
+            secondCity: e.target.secondCity.value
+        })
+        // setting the state
     }
 
     render() {
@@ -24,7 +29,7 @@ export class Search extends Component {
                     <input type='text' id="secondCity" name='secondCity' placeholder='Ex. Singapore' />
                     <button type='submit'>Search</button>
                 </form>
-                <Map/>
+                <ActiveMap firstCity={this.state.firstCity} secondCity={this.state.secondCity}/>
             </div>
         )
     }
