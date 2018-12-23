@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Search } from './components/Search';
+import { Navbar } from './components/Navbar';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         </header>
+        <Navbar/>
         <Search/>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ActiveMap } from '../ActiveMap';
+import './Search.css';
 
 export class Search extends Component {
 
@@ -21,15 +22,19 @@ export class Search extends Component {
 
     render() {
         return (
-            <div>
-                {/* <h4>Enter the two cities you'd like to compare</h4> */}
-                <form onSubmit={this.onTextChange}>
+            <div className="search-container">
+                <div className="search-container--inner">
+                <h4 className="search-prompt">enter two cities you'd like to compare</h4>
+                <form onSubmit={this.onTextChange} className="search-form-container">
                     <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' 
                     />
                     <input type='text' id="secondCity" name='secondCity' placeholder='Ex. Singapore' />
                     <button type='submit'>Search</button>
                 </form>
+                </div>
+                <div className="activeMap-container">
                 <ActiveMap firstCity={this.state.firstCity} secondCity={this.state.secondCity}/>
+                </div>
             </div>
         )
     }

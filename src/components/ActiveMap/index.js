@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-// import { Search } from './components/Search';
 import mapboxgl from 'mapbox-gl';
-import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import './ActiveMap.css';
 
 mapboxgl.accessToken = "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg";
 
@@ -29,16 +28,14 @@ export class ActiveMap extends Component {
             // scrollZoom: true,
         });
 
-        this.map.on('load', () => {
-            this.mapTwo = new mapboxgl.Map({
+        this.mapTwo = new mapboxgl.Map({
                 container: this.secondCity, // container id
                 style: "mapbox://styles/mapbox/dark-v9", //stylesheet location
                 center: secondCityCoordinates, // starting position [lng, lat]
                 zoom: ZOOM_LEVEL, // starting zoom
                 interactive: true,
                 // scrollZoom: true
-            });
-        })
+        });
         console.log(firstCityCoordinates)
         console.log(secondCityCoordinates)
         console.log(window.L.mapbox.geocoder);
@@ -52,26 +49,27 @@ export class ActiveMap extends Component {
     render() {
         const firstCityStyle = {
             position: 'absolute',
-            top: '100px',
+            top: '250px',
             bottom: '0',
-            width: '100%',
+            width: '80%',
             opacity: '0.6',
+            border: '1px solid green',
           };
 
         const secondCityStyle = {
             opacity: '0.3',
             position: 'absolute',
-            top: '100px',
+            top: '250px',
             bottom: '0',
-            width: '100%',
-            //height: '200px',
+            width: '80%',
+            border: '1px solid red',
         }
       
         console.log(this.props.firstCity);
         console.log(this.props.secondCity);
         
         return (
-            <div>
+            <div className="map-container">
             <div style= {firstCityStyle} ref= {el => this.firstCity = el}/>
             <div style= {secondCityStyle} ref= {el => this.secondCity = el}/>
             </div>
