@@ -1,10 +1,13 @@
 .search-prompt {
     font-family: 'Major Mono Display', monospace;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .search-form-container {
-    margin-top: 20px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-container {
@@ -14,5 +17,21 @@
 
 .search-container--inner {
     text-align: center;
-
+    margin: 0 auto;
 }
+
+.search-button {
+    font-family: 'Major Mono Display', monospace;
+    width: 70px;
+    border: 1px solid black;
+}
+
+#firstCity, #secondCity {
+    border: 1px solid white;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.search-button, #firstCity, #secondCity:focus {
+    outline: none;
+} 

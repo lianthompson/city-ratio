@@ -49,20 +49,18 @@ export class ActiveMap extends Component {
     render() {
         const firstCityStyle = {
             position: 'absolute',
-            top: '250px',
-            bottom: '0',
+            top: 190,
+            bottom: 50,
             width: '80%',
             opacity: '0.6',
-            border: '1px solid green',
           };
 
         const secondCityStyle = {
             opacity: '0.3',
             position: 'absolute',
-            top: '250px',
-            bottom: '0',
+            top: 190,
+            bottom: 50,
             width: '80%',
-            border: '1px solid red',
         }
       
         console.log(this.props.firstCity);

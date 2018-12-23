@@ -29,12 +29,10 @@ export class Search extends Component {
                     <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' 
                     />
                     <input type='text' id="secondCity" name='secondCity' placeholder='Ex. Singapore' />
-                    <button type='submit'>Search</button>
+                    <button type='submit' className="search-button">search</button>
                 </form>
                 </div>
-                <div className="activeMap-container">
                 <ActiveMap firstCity={this.state.firstCity} secondCity={this.state.secondCity}/>
-                </div>
             </div>
         )
     }

@@ -8,7 +8,7 @@ export class Navbar extends Component {
             <div className="navbar-container">
                 <div className="navbar-logo">city-ratio</div>
                 <div className="navbar-link-container">
-                    <ul className="navbar-item">saved maps</ul>
+                    {/* <ul className="navbar-item">saved maps</ul> */}
                 </div>
             </div>
         )
