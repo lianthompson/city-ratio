@@ -1,0 +1,20 @@
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-item, .footer-item-contact {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.footer-item-contact {
+    text-decoration: none;
+    color: inherit;
+}
