@@ -6,7 +6,7 @@ export class Footer extends Component {
     render() {
         return (
             <div className="footer-container">
-                <a href="mailto:lian@colark.com" className="footer-item-contact">contact</a>
+                <a href="mailto:lian@colark.com" className="footer-item-contact">feedback</a>
                 <ul className="footer-item">how it works</ul>
             </div>
         )
