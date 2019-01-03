@@ -18,3 +18,8 @@
 .navbar-link-container {
     display: flex;
 }
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
