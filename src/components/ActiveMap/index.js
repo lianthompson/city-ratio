@@ -25,7 +25,7 @@ export class ActiveMap extends Component {
             center: firstCityCoordinates, // starting position [lng, lat]
             zoom: ZOOM_LEVEL, // starting zoom
             interactive: true,
-            // scrollZoom: true,
+            scrollZoom: false,
         });
 
         this.mapTwo = new mapboxgl.Map({
@@ -34,7 +34,7 @@ export class ActiveMap extends Component {
                 center: secondCityCoordinates, // starting position [lng, lat]
                 zoom: ZOOM_LEVEL, // starting zoom
                 interactive: true,
-                // scrollZoom: true
+                scrollZoom: false
         });
         console.log(firstCityCoordinates)
         console.log(secondCityCoordinates)
