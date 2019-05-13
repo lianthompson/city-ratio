@@ -5,17 +5,13 @@ import './Navbar.css';
 export class Navbar extends Component {
 
     render() {
-        function Refresh(e) {
-            e.preventDefault();
-            window.location.reload()
-        }
 
         return (
             <Router>
                 <div className="navbar-container">
-                    <Link to="/">
-                        <div className="navbar-logo" onClick={Refresh}>city-ratio</div>
-                    </Link>
+                    <a className="navbar-logo" href="/">
+                        <img className="navbar-icon" src="https://res.cloudinary.com/dec0zvcps/image/upload/v1557788514/globe_eezsle.jpg" alt=""/>
+                    </a>
                     <Link to="savedmaps">
                         <div className="navbar-link-container">
                             <ul className="navbar-item"

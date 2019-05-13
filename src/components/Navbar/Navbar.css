@@ -6,14 +6,10 @@
     font-family: 'Major Mono Display', monospace;
 }
 
-.navbar-logo {
-    height: 50%;
+.navbar-icon {
+    height: 20px;
     transform: translateY(80%);
 }
-/* 
-.navbar-item {
-    border: 1px solid green;
-} */
 
 .navbar-link-container {
     display: flex;

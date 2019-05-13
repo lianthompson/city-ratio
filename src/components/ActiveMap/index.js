@@ -49,7 +49,7 @@ export class ActiveMap extends Component {
     render() {
         const firstCityStyle = {
             position: 'absolute',
-            top: 190,
+            top: 210,
             bottom: 50,
             width: '80%',
             opacity: '0.6',
@@ -58,7 +58,7 @@ export class ActiveMap extends Component {
         const secondCityStyle = {
             opacity: '0.3',
             position: 'absolute',
-            top: 190,
+            top: 210,
             bottom: 50,
             width: '80%',
         }

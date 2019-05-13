@@ -40,9 +40,9 @@ export class Search extends Component {
                 <form onSubmit={this.onTextChange} className="search-form-container">
                     <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' required 
                     />
-                    <button type="reverse" className="reverse-button" onClick={this.reverse}>reverse</button>
+                    <img src="https://res.cloudinary.com/dec0zvcps/image/upload/v1557788848/refershArrow_ylxhaq.png" className="reverse-button" onClick={this.reverse}/>
                     <input type='text' id="secondCity" name='secondCity' placeholder='Ex. New York' required/>
-                    <button type='submit' className="search-button">search</button>
+                    <button type='submit' className="search-button">compare</button>
                 </form>
                 </div>
                 <ActiveMap firstCity={this.state.firstCity} secondCity={this.state.secondCity}/>

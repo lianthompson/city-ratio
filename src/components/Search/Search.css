@@ -20,18 +20,43 @@
     margin: 0 auto;
 }
 
-.search-button, .reverse-button {
+.search-button, .reverse-button{
     font-family: 'Major Mono Display', monospace;
-    width: 70px;
     border: 1px solid black;
+}
+
+.search-button {
+    width: 70px;
+}
+
+.reverse-button {
+    width: 15px;
+    height: 15px;
+    border: none;
 }
 
 #firstCity, #secondCity {
     border: 1px solid white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
 .search-button, #firstCity, #secondCity:focus {
     outline: none;
 } 
+
+@media screen and (max-width: 500px) {
+    #firstCity, #secondCity {
+        width: 75px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #firstCity, #secondCity {
+        width: 200px;
+    }
+
+    .search-button {
+        width: 100px;
+    }
+}
