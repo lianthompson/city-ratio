@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^2.3.0",
+    "auth0-js": "^9.10.2",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "geojson": "^0.5.0",

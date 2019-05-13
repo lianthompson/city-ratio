@@ -20,7 +20,7 @@
     margin: 0 auto;
 }
 
-.search-button {
+.search-button, .reverse-button {
     font-family: 'Major Mono Display', monospace;
     width: 70px;
     border: 1px solid black;

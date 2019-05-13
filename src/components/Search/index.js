@@ -17,10 +17,22 @@ export class Search extends Component {
             firstCity: e.target.firstCity.value,
             secondCity: e.target.secondCity.value
         })
+
+        console.log("state is ....")
         // setting the state
+    }
+    reverse = (e) => {
+        e.preventDefault();
+
+        this.setState({
+            firstCity: this.state.secondCity,
+            secondCity: this.state.firstCity
+        });
     }
 
     render() {
+
+
         return (
             <div className="search-container">
                 <div className="search-container--inner">
@@ -28,6 +40,7 @@ export class Search extends Component {
                 <form onSubmit={this.onTextChange} className="search-form-container">
                     <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' required 
                     />
+                    <button type="reverse" className="reverse-button" onClick={this.reverse}>reverse</button>
                     <input type='text' id="secondCity" name='secondCity' placeholder='Ex. New York' required/>
                     <button type='submit' className="search-button">search</button>
                 </form>
