@@ -10,7 +10,8 @@
 .footer-item, .footer-item-contact {
     text-align: center;
     font-family: 'Major Mono Display', monospace;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
 }
 
