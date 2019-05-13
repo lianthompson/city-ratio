@@ -6,8 +6,8 @@ export class Search extends Component {
 
     // default state
     state = {
-        firstCity: 'Jamaica',
-        secondCity: 'San Francisco'
+        firstCity: 'San Francisco',
+        secondCity: 'New York'
     };
 
     onTextChange = (e) => {
@@ -28,7 +28,7 @@ export class Search extends Component {
                 <form onSubmit={this.onTextChange} className="search-form-container">
                     <input type='text' id="firstCity" name='firstCity' placeholder='Ex. San Francisco' required 
                     />
-                    <input type='text' id="secondCity" name='secondCity' placeholder='Ex. Singapore' required/>
+                    <input type='text' id="secondCity" name='secondCity' placeholder='Ex. New York' required/>
                     <button type='submit' className="search-button">search</button>
                 </form>
                 </div>

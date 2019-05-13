@@ -4,7 +4,7 @@ import './ActiveMap.css';
 
 mapboxgl.accessToken = "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg";
 
- var firstCityCoordinates = [103.8198, 1.3521];
+ var firstCityCoordinates = [-122.4194, 37.7749];
  var secondCityCoordinates = [-74.006, 40.7128];
  var ZOOM_LEVEL = 11;
 
