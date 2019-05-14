@@ -19,7 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 cp --recursive ./build s3://city-ratio.com"
   },
   "eslintConfig": {
     "extends": "react-app"
