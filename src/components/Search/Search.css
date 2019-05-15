@@ -24,6 +24,7 @@
 .search-button, .reverse-button{
     font-family: 'Major Mono Display', monospace;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .search-button {
