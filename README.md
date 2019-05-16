@@ -1,3 +1,4 @@
+### City-ruler
 ![City-ruler](https://res.cloudinary.com/dec0zvcps/image/upload/v1558025928/Screen_Shot_2019-05-16_at_9.58.33_AM_ikees7.png)
 
 City-ruler is a frontend web app for comparing the size of two cities. It overlays the second city you enter on an opaque background of the first city. The second city can be moved to compare different parts of the map.
@@ -10,9 +11,21 @@ City-ruler was bootstrapped with [Create React App](https://github.com/facebook/
 
 To run city-ruler locally, in terminal, type:
 
-### `npm i`
-### `npm start`
+`npm i`
+`npm start`
 
 This runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Current Features
+
+* Moveable 'active' map
+* Toggle between active and inactive map
+
+## Later Features
+
+* Shareable link
+* Active map opacity slider
+* Plot distances
+* Save location between toggles
 
