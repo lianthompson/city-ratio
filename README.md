@@ -1,4 +1,4 @@
-![City-ruler](https://res.cloudinary.com/dec0zvcps/image/upload/v1558025722/Screen_Shot_2019-05-16_at_9.50.55_AM_opx5oi.png)
+![City-ruler](https://res.cloudinary.com/dec0zvcps/image/upload/v1558025928/Screen_Shot_2019-05-16_at_9.58.33_AM_ikees7.png)
 
 City-ruler is a frontend web app for comparing the size of two cities. It overlays the second city you enter on an opaque background of the first city. The second city can be moved to compare different parts of the map.
 
