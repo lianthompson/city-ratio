@@ -10,7 +10,7 @@ City-ruler was bootstrapped with [Create React App](https://github.com/facebook/
 
 ## Available Scripts
 
-# For Web
+### For Web
 
 To run city-ruler locally, in terminal, type:
 
@@ -20,7 +20,7 @@ To run city-ruler locally, in terminal, type:
 This runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# For Desktop
+### For Desktop
 
 `npm i`
 `npm run electron-dev`
