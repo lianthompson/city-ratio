@@ -6,7 +6,7 @@ City-ruler is a frontend web app for comparing the size of two cities. It overla
 
 Users can use the reverse button to toggle the first and second city.
 
-City-ruler was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [Mapbox](https://docs.mapbox.com/)'s API.
+City-ruler was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [Mapbox](https://docs.mapbox.com/)'s API. Site visits are tracked using [Mixpanel](https://mixpanel.com/report/1972615/insights).
 
 ## Available Scripts
 
