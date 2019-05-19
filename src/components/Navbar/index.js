@@ -19,7 +19,7 @@ export class Navbar extends Component {
             <Router>
                 <div className="navbar-container">
                     <a className="navbar-logo" href="/">
-                        <img className="navbar-icon" src="https://res.cloudinary.com/dec0zvcps/image/upload/v1557788514/globe_eezsle.jpg" alt="" />
+                        <img className="navbar-icon" src="https://res.cloudinary.com/dec0zvcps/image/upload/v1558297878/icon_stwdjw.png" alt="" />
                     </a>
                     {/* <Link to="savedmaps"> */}
                         {/* <div className="navbar-link-container">
