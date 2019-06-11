@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^2.3.0",
+    "@turf/turf": "^5.1.6",
     "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
     "electron-builder": "^20.40.2",
@@ -16,6 +17,8 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.2",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "wait-on": "^3.2.0"
   },
   "scripts": {
