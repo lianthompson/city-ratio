@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
-import * as turf from '@turf/turf';
 import './ActiveMap.css';
+require('dotenv').load();
 
 
+mapboxgl.accessToken = process.env.REACT_APP_API_KEY
 
-console.log("this is " + turf);
-
-mapboxgl.accessToken = "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg";
+mapboxgl.mb = mapboxgl.accessToken;
 
 var firstCityCoordinates = [-122.4194, 37.7749];
 var secondCityCoordinates = [-74.006, 40.7128];
 var ZOOM_LEVEL = 12;
 
 
-var geocoder = window.L.mapbox.geocoder("mapbox.places", { accessToken: "pk.eyJ1IjoibGlhbnRob21wc29uIiwiYSI6ImNqcGJqMmx3aTA0Z2MzamxrZjhzcmY5c2wifQ.TVNesv3GrmPx2Y87mRiXcg" })
+var geocoder = window.L.mapbox.geocoder("mapbox.places", { accessToken: mapboxgl.mb })
 
 // look up setZoom button in mapboxgl api
 
