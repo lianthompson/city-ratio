@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ActiveMap } from '../ActiveMap';
 import './Search.css';
+import { connect } from 'react-redux';
 
 export class Search extends Component {
 
@@ -50,3 +51,12 @@ export class Search extends Component {
         )
     }
 }
+
+const mapStateToProps = ({ firstCity, secondCity }) => {
+    return {
+        firstCity,
+        secondCity
+    }
+}
+
+export default connect(mapStateToProps)(Search);

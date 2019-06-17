@@ -39,3 +39,23 @@
     cursor: ew-resize;
     border: 1px solid green;
     } */
+
+
+    .distance-container {
+        position: absolute;
+        top: 210px;
+        left: 90px;
+        z-index: 5;
+        border: 1px solid black;
+        }
+         
+        .distance-container > * {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 11px;
+        line-height: 18px;
+        display: block;
+        margin: 0;
+        padding: 5px 10px;
+        border-radius: 3px;
+        }
