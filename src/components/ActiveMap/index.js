@@ -8,6 +8,8 @@ mapboxgl.accessToken = process.env.REACT_APP_API_KEY
 
 mapboxgl.mb = mapboxgl.accessToken;
 
+console.log(mapboxgl.mb)
+
 var firstCityCoordinates = [-122.4194, 37.7749];
 var secondCityCoordinates = [-74.006, 40.7128];
 var ZOOM_LEVEL = 12;
