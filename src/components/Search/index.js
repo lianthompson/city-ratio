@@ -54,7 +54,7 @@ export class Search extends Component {
     }
 }
 
-const mapStateToProps = ({ firstCity, secondCity }) => {
+const mapStateToProps = ({ state, firstCity, secondCity }) => {
     return {
         firstCity,
         secondCity
